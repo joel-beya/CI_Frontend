@@ -1,0 +1,23 @@
+<div class="row justify-content-md-center">
+  <div class="col-8" style="box-shadow: 8px 11px 27px 4px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 8px 11px 27px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 8px 11px 27px 4px rgba(0,0,0,0.75);">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">NOM</th>
+            <th scope="col">DISONIBILITE</th>
+            <th scope="col">HEURES PLANIFIEES</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr class="clickable" *ngFor="let employe of tableau" [routerLink]="['/detail/']">
+                <td>{{employe.employe}}</td>
+                <td>{{employe.disponibilite}}</td>
+                <td>{{employe.heures}}</td>
+            </tr>
+
+        </tbody>
+      </table>
+  </div>
+</div>
